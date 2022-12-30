@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --ff-open-sans: "Open Sans", sans-serif;
+  --ff-open-sans: "Poppins", sans-serif;
+  --clr-Violet: hsl(257, 40%, 49%);
+  --clr-Magenta: hsl(300, 69%, 71%);
+  --clr-black: #333333;
+  --clr-white: #f3f3f3;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px) {
+}
