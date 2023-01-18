@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 
 *,
 *::after,
@@ -9,7 +9,7 @@
 }
 :root {
   --ff-open-sans: "Open Sans", sans-serif;
-  --ff-open-sans: "Poppins", sans-serif;
+  --ff-poppins: "Poppins", sans-serif;
   --clr-Violet: hsl(257, 40%, 49%);
   --clr-Magenta: hsl(300, 69%, 71%);
   --clr-black: #333333;
@@ -19,10 +19,95 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+body {
+  background-image: url(../images/bg-mobile.svg);
+  background-color: var(--clr-Violet);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 
-@media screen and (min-width: 375px) {
+  gap: 1rem;
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
 }
+.logo-container {
+  margin: 0.5rem;
+}
+.logo {
+  max-width: 140px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  text-align: center;
+  color: var(--clr-white);
+}
+.title {
+  font-family: var(--ff-open-sans);
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.description {
+  font-family: var(--ff-open-sans);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.register-btn {
+  width: 70%;
+  background: var(--clr-white);
+  border: 2px solid var(--clr-white);
+  padding: 0.5rem;
+  border-radius: 30px;
+  box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.15);
+}
+.footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-icon .icon {
+  color: var(--clr-white);
+
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  border: 2px solid var(--clr-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media screen and (min-width: 768px) {
-}
-@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+  }
+  .header {
+    flex-direction: row;
+
+    text-align: start;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .register-btn {
+    width: auto;
+    padding: 0.5rem 3rem;
+  }
+  .footer {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }
